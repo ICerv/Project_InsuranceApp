@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <title>Evidence PojištěníApp</title>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <h1><u>PojištěníApp</u></h1>
+            <small>pro palubní pruvodči</small>
+        </div>
+
+        <nav>
+            <ul>
+                <li class="active"><a href="client.html">Pojištěnci</a></li>
+                <li><a href="insuarance.html">Pojistné</a></li>
+                <li><a href=" events.html">Události</a></li>
+                <li><a href=" about.html">O aplikaci..</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--CONTACT FORM-->
+    <article>
+        <header>
+            <h2>Nový pojištěnec</h2>
+        </header>
+        <div class="form-bg">
+            <form class="flexbox">
+                <div class="flexbox-client-photo">
+                    <input class="user-photo" type="image" src="img/flight_attendant_photo.png" alt="Flight Attendant">
+                </div>
+                <div class="flexbox-input1">
+                    <label for=" firstName" class="details">Jméno *</label>
+                    <input type=" text" id="firstName" placeholder="Jan">
+                    <label for="lastName" class="details">Příjmení *</label>
+                    <input type=" text" id="lastName" placeholder="Novák">
+                </div>
+                <div class="flexbox-input2">
+                    <label for="age" class="details">Věk *</label>
+                    <input type=" number" id="age" placeholder="20">
+                    <label for="phone" class="details">Telefon *</label>
+                    <input type=" tel" id="phone" placeholder="+420 603 280 100">
+                </div>
+            </form>
+            <div class="btn-submit">
+                <input type="button" id="button" value="Uložit">
+            </div>
+        </div>
+    </article>
+
+    <!--TABLE-->
+    <article>
+        <header>
+            <h2>Pojištěnci</h2>
+        </header>
+        <table id="table-clients">
+            <thead>
+                <tr>
+                    <th>Jméno a přijmení</th>
+                    <th>Telefon</th><br>
+                    <th>Věk</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>Beata Balounová</td>
+                <td>+420 603 280 100</td>
+                <td>21</td>
+            </tr>
+        </table>
+    </article>
+    <!--FOOTER-->
+    <footer>
+        <p>Vytvořila &copy;Inna Červenková 2022 za pomocí <a href=" https:www.itnetwork.cz"
+                target="_blank">itnetwork.cz</a>
+        </p>
+    </footer>
+
+    <script src="js/Client.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
